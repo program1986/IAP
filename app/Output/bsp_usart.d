@@ -1,5 +1,5 @@
-..\output\bsp_usart.o: ..\User\usart\bsp_usart.c
-..\output\bsp_usart.o: ..\User\usart\bsp_usart.h
+..\output\bsp_usart.o: ..\..\bootloader\User\usart\bsp_usart.c
+..\output\bsp_usart.o: ..\..\bootloader\User\usart\bsp_usart.h
 ..\output\bsp_usart.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 ..\output\bsp_usart.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
 ..\output\bsp_usart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h

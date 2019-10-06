@@ -3,39 +3,48 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ¦ÌVision V5.18.0.0
-Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: none Caspar, none, LIC=MGX2Z-J0DRD-9X2UW-QIY9A-AHNE9-Y38G4
+IDE-Version: ¦ÌVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: a a, a, LIC=BL2VE-54G3V-59MGZ-J3PM6-F28W3-I7LM9
  
 Tool Versions:
-Toolchain:       MDK-ARM Professional  Version: 5.18
-Toolchain Path:  D:\Program Files\Keil_v5\ARM\ARMCC\Bin
-C Compiler:      Armcc.exe V5.06 update 1 (build 61)
-Assembler:       Armasm.exe V5.06 update 1 (build 61)
-Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
-Library Manager: ArmAr.exe V5.06 update 1 (build 61)
-Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
-CPU DLL:         SARMCM3.DLL V5.18
-Dialog DLL:      DCM.DLL V1.13.6.0
-Target DLL:      UL2CM3.DLL V1.157.5.0
-Dialog DLL:      TCM.DLL V1.14.8.0
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      UL2CM3.DLL V1.155.0.0
+Dialog DLL:      TCM.DLL V1.14.4.0
  
 <h2>Project:</h2>
-D:\Users\Caspar\Desktop\test\Project\Template.uvprojx
-Project File Date:  09/10/2019
+D:\Shijingwei\Sourcecode\STM32\IAP\app\Project\Template.uvprojx
+Project File Date:  10/06/2019
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\Program Files\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-After Build - User command #1: fromelf.exe --bin -o ..\Output\Template.bin ..\Output\Template.axf
-"..\Output\Template.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\User\main.c(22): warning:  #223-D: function "printf" declared implicitly
+                printf("hello version 9\r\n");
+..\User\main.c(11): warning:  #177-D: variable "key" was declared but never referenced
+        u8 key;
+..\User\main.c(12): warning:  #177-D: variable "update_flag" was declared but never referenced
+        u16 update_flag=0;
+..\User\main.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=2084 RO-data=336 RW-data=52 ZI-data=60364  
+FromELF: creating hex file...
+After Build - User command #1: c:\Keil_v5\ARM\ARMCC\bin\fromelf.exe --bin -o ..\Output\Template.bin ..\Output\Template.axf
+"..\Output\Template.axf" - 0 Error(s), 3 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
-  D:\Users\Caspar\Desktop\test\Project\RTE
-  D:\Program Files\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+  D:\Shijingwei\Sourcecode\STM32\IAP\app\Project\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

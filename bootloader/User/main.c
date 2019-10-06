@@ -11,8 +11,11 @@ int main()
 	u16 update_flag=0;
 	u16 oldcount=0;				//老的串口接收数据值
 	u16 applenth=0;				//接收到的app代码长度
-	//STMFLASH_Write(FLASH_Running_APP_Flag,&update_flag,1);
+	update_flag = 0xAA;
+	STMFLASH_Write(FLASH_Running_APP_Flag,&update_flag,1);
+	update_flag =0xBB;
 	update_flag=STMFLASH_ReadHalfWord(FLASH_Running_APP_Flag);
+	update_flag =0;
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
 	USART1_Config();
 	delay_init();

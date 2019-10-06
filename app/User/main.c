@@ -4,6 +4,8 @@
 #include "key.h"
 #include "delay.h"
 #define FLASH_Running_APP_Flag       0x08075000
+
+extern void USART1_Config(void);
 int main()
 {
 	u8 key;
@@ -13,14 +15,19 @@ int main()
 	KEY_Init();
 	delay_init();
 	LED0_OFF;
+	USART1_Config();
 	while(1)
 	{
+		
+		printf("hello version 9\r\n");
+		/*
 		key=KEY_Scan(0);
 		LED0_ON;
 		if(key==KEY0_PRES)
 		{
 			STMFLASH_Write(FLASH_Running_APP_Flag,&update_flag,1);
 		}
+		*/
 	}
 }
 
